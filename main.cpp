@@ -32,11 +32,12 @@ int main(int argc, char** argv)
 	c03.setGb(481.2);
 	c03.setRam(12);
 	
-	Computadora c04;
+	/*Computadora c04;
 	c04.setSo("WIndows");
 	c04.setTipo("Asus");
 	c04.setGb(2060.80);
 	c04.setRam(32);
+	*/
 	
 	Computadora c05;
 	c05.setSo("Windows");
@@ -48,8 +49,17 @@ int main(int argc, char** argv)
 	lab.agregarComputadora(c01);
 	lab.agregarComputadora(c02);
 	lab.agregarComputadora(c03);
-	lab.agregarComputadora(c04);
+	//lab.agregarComputadora(c04);
 	lab.agregarComputadora(c05);
-	lab.mostrar();
 	
+	
+	//cout << c01;
+	Computadora c04;
+	cin >> c04;
+	//----Forma 1------
+	//lab.agregarComputadora(c04);
+	// ---------Forma 2------ (Agregando funcion Friend a laboratorio.h)
+	lab << c04;
+	//MOSTRAR
+	lab.mostrar();
 }
