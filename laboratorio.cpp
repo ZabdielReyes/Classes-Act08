@@ -23,11 +23,13 @@ void Laboratorio::mostrar()
 {
 	for(size_t i=0; i <cont; i++){
 		Computadora &p = arreglo[i];
+		cout << p;
+		/*
 		cout << "Sistema Operativo: " << p.getSo() <<endl;
 		cout << "Marca: " << p.getTipo() <<endl;
 		cout << "Almacenamiento: " << p.getGb() <<"	Gigabytes"<<endl;
 		cout << "Ram: " << p.getRam() <<"	Gb"<<endl;
 		cout << endl;
-		
+		*/
 	}
 }
